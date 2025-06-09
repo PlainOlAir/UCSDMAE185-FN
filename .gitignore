@@ -1,2 +1,14 @@
 debug.log
 fluent-20250608-195303-28936.trn
+fluent-20250609-140736-21084.trn
+outlet_velocity-rfile_2_1.out
+outlet_velocity-rfile_1_1.out
+outlet_velocity-rfile.out
+outlet_mass-flow-rate-rfile_2_1.out
+outlet_mass-flow-rate-rfile_1_1.out
+outlet_mass-flow-rate-rfile.out
+coarse_1_workflow_files/8FL_Maelstrom_Double_Inlet_Area_Volume.sf
+coarse_1_workflow_files/coarse_1.wft
+coarse_1_workflow_files/TaskObject11.msh.h5
+coarse_1_workflow_files/TaskObject3.msh.h5
+coarse_1_workflow_files/8FL_Maelstrom_Double_Inlet_Area_Volume.scdoc.pmdb
