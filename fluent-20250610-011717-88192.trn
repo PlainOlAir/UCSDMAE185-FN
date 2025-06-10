@@ -1,0 +1,237 @@
+Auto-Transcript Start Time:  01:17:17, 10 Jun 2025 Pacific Daylight Time 
+Current Directory: "C:\Users\.plain\Documents\MATLAB\MAE 185\UCSDMAE185-FN"
+
+              Welcome to ANSYS Fluent 2024 R1
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 22 2023 10:31:01 EST  Build Id: 10184  
+ 
+Connected License Server List:	1055@its-flexsw-srv.ucsd.edu
+
+     --------------------------------------------------------------
+     This is an academic version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "Core-1" (win64).
+
+---------------------------------------------------------------------------------
+ID    Hostname  Core   O.S.         PID    Vendor                               
+---------------------------------------------------------------------------------
+n13   Core-1    14/16  Windows-x64  83388  AMD Ryzen 7 5800X 8-Core Processor   
+n12   Core-1    13/16  Windows-x64  73000  AMD Ryzen 7 5800X 8-Core Processor   
+n11   Core-1    12/16  Windows-x64  51864  AMD Ryzen 7 5800X 8-Core Processor   
+n10   Core-1    11/16  Windows-x64  86764  AMD Ryzen 7 5800X 8-Core Processor   
+n9    Core-1    10/16  Windows-x64  60336  AMD Ryzen 7 5800X 8-Core Processor   
+n8    Core-1    9/16   Windows-x64  85068  AMD Ryzen 7 5800X 8-Core Processor   
+n7    Core-1    8/16   Windows-x64  89456  AMD Ryzen 7 5800X 8-Core Processor   
+n6    Core-1    7/16   Windows-x64  68736  AMD Ryzen 7 5800X 8-Core Processor   
+n5    Core-1    6/16   Windows-x64  86688  AMD Ryzen 7 5800X 8-Core Processor   
+n4    Core-1    5/16   Windows-x64  95044  AMD Ryzen 7 5800X 8-Core Processor   
+n3    Core-1    4/16   Windows-x64  81752  AMD Ryzen 7 5800X 8-Core Processor   
+n2    Core-1    3/16   Windows-x64  57928  AMD Ryzen 7 5800X 8-Core Processor   
+n1    Core-1    2/16   Windows-x64  1980   AMD Ryzen 7 5800X 8-Core Processor   
+n0*   Core-1    1/16   Windows-x64  86556  AMD Ryzen 7 5800X 8-Core Processor   
+host  Core-1           Windows-x64  59068  AMD Ryzen 7 5800X 8-Core Processor   
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\.plain\\Documents\\MATLAB\\MAE 185\\UCSDMAE185-FN\\cleanup-fluent-Core-1-59068.bat
+
+Posting ANSYS Product Improvement Program startup data
+Done.
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v241\fluent\fluent24.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+Multicore SMT processors detected. Processor affinity set!
+
+Reading from Core-1:"C:/Users/.plain/Documents/MATLAB/MAE 185/UCSDMAE185-FN/baseline.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+Warning: reading 16 partition grid onto 14 compute node machine.
+         will auto partition.
+      401925 cells,     1 cell zone  ...
+         401925 mixed cells,  zone id: 872
+     2158046 faces,     8 face zones ...
+        2080384 mixed interior faces,  zone id: 874
+          75561 polygonal velocity-inlet faces,  zone id: 26
+            152 polygonal mass-flow-inlet faces,  zone id: 27
+            136 polygonal mass-flow-inlet faces,  zone id: 28
+            139 polygonal mass-flow-inlet faces,  zone id: 29
+            133 polygonal mass-flow-inlet faces,  zone id: 30
+            137 polygonal mass-flow-inlet faces,  zone id: 31
+           1404 polygonal pressure-outlet faces,  zone id: 32
+     1507131 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts..............,
+		faces..............,
+		nodes..............,
+		cells..............,
+        bandwidth reduction using Reverse Cuthill-McKee: 28787/2785 = 10.3364
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	interior--zone8fl_maelstrom_double_inlet_area.step-volume
+	zone8fl_maelstrom_double_inlet_area.step-volume:1
+	outlet
+	inlet_negx
+	inlet_negy
+	inlet_plusx
+	inlet_plusy
+	inlet_propellant
+	zone8fl_maelstrom_double_inlet_area.step-volume
+     parallel,
+Done.
+
+> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "General*Table1*ButtonBox1(Mesh)*PushButton2(Display)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4 5 7))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 4 5 6 7))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 3 4 5 6 7))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 2 3 4 5 6 7))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 1 2 3 4 5 6 7))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-set-list-selections "Mesh Display*Table1*Frame3*List1(Surfaces)" '( 0 1 2 3 4 5 6 7))
+(cx-gui-do cx-activate-item "Mesh Display*Table1*Frame3*List1(Surfaces)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.258927 0.0298231 -0.107195) '(0 0 0) '(0.0380576 -0.00357556 -0.0754449) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.0264691 -0.0544243 -0.0444875) '(0 0 0) '(-0.252155 -0.0305884 0.221493) 0 0)
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(zone8fl_maelstrom_double_inlet_area.step-volume:1) (cx-active-window))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Reference Values"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Setup|Boundary Conditions"))
+(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 7))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 5))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 6))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 7))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*Table3*DropDownList2(Type)" '( 15))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*DropDownList2(Type)")
+
+ Zone not slit.(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 2)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 3)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 4)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 5)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 6)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 7)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 8)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 9)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 10)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Wall*Frame4*Frame8(Wall Film)*Frame1*Frame2" 0)
+(cx-gui-do cx-enable-apply-button "Wall")
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 1)
+(cx-gui-do cx-set-toggle-button2 "Wall*Frame4*Frame2(Thermal)*Frame1*Frame1(Thermal Conditions)*ToggleBox1*Temperature" #t)
+(cx-gui-do cx-activate-item "Wall*Frame4*Frame2(Thermal)*Frame1*Frame1(Thermal Conditions)*ToggleBox1*Temperature")
+(cx-gui-do cx-set-toggle-button2 "Wall*Frame4*Frame2(Thermal)*Frame1*Frame1(Thermal Conditions)*ToggleBox1*Heat Flux" #t)
+(cx-gui-do cx-activate-item "Wall*Frame4*Frame2(Thermal)*Frame1*Frame1(Thermal Conditions)*ToggleBox1*Heat Flux")
+(cx-gui-do cx-activate-tab-index "Wall*Frame4" 0)
+(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Wall*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 6))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.202548 -0.0654549 -0.414985) '(0 0 0) '(-0.3783 -0.200201 -0.396814) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.411589 0.0167124 0.394214) '(0 0 0) '(0.144517 0.128441 0.243804) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.195555 -0.157911 0.335642) '(0 0 0) '(-0.400899 -0.367005 0.0492794) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.014174 -0.0184786 -0.0191607) '(0 0 0) '(-0.0312037 -0.0525791 -0.0196661) 0 0)
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(zone8fl_maelstrom_double_inlet_area.step-volume:1) (cx-active-window))
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")
+(cx-use-window-id 51)
+(cxg-clear-all-selections (cx-active-window))
+(cxg-add-surfaces-to-selection '(inlet_negy) (cx-active-window))
+(cx-gui-do cx-activate-item "Quick Edit*Table1*PushButton4(icon_close)")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0432674 -0.0479668 -0.14882) '(0 0 0) '(-0.0753509 -0.183623 -0.0752414) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.0271811 0.0549173 0.204009) '(0 0 0) '(-0.0104519 -0.0317396 0.0646879) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.111179 0.0187434 -0.0718013) '(0 0 0) '(0.18869 0.309471 -0.282019) 0 0)
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 4))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 3))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*Table3*Table4*ButtonBox1*PushButton1(Edit)")
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Mass-Flow Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-item "Mass-Flow Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-selections "Boundary Conditions*Table1*List2(Zone)" '( 0))
+(cx-gui-do cx-activate-item "Boundary Conditions*Table1*List2(Zone)")
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+
+Posting ANSYS Product Improvement Program performance data 
+Done.
+Auto-Transcript Stop Time:  01:31:28, 10 Jun 2025 Pacific Daylight Time 
+Total Transcript Time: 14 Minute 11 Second.
